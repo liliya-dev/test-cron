@@ -9,4 +9,5 @@ jobs:
       - name: Call our API route
         run: |
           curl --request GET \
-          --url 'https://harmon-c2bh84etu-harmonie.vercel.app/api/global-doc-index-to-algolia' \
+          --url 'https://harmon-3hahpnnnh-harmonie.vercel.app/api/global-doc-index-to-algolia' \
+          --header 'Authorization: Bearer ${{ secrets.CRON_KEY }}'
